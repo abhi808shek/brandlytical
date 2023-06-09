@@ -1,0 +1,66 @@
+import React, { useState } from 'react'
+import { Menu, Button } from 'antd'
+import { Outlet } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai'
+import { FaHeadphones, FaIdCard, FaLaptop, FaLaptopHouse, FaMicrophone, FaSignOutAlt, FaTag } from 'react-icons/fa'
+import { icons } from 'react-icons'
+import { HiOfficeBuilding, HiSpeakerphone, HiSupport } from 'react-icons/hi'
+import { RiPriceTag2Line, RiPriceTag3Line, RiPriceTagLine } from 'react-icons/ri'
+
+const AdminDashboard = ({ signOut }) => {
+  
+  const navigate = useNavigate();
+
+  const [collapsed, setCollapsed] = useState(false);
+
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+
+  return (
+    
+    <div className='flex flex-row h-full justify-center'>
+        
+        <div className='md:w-1/6 sm:w-1/4 w-1/2 fixed left-0 top-0 bottom-0 z-10'>
+        <Button type="secondary" className='bg-red-400 ml-3 mt-3' onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
+        {collapsed ? <AiOutlineMenuUnfold /> : <AiOutlineMenuFold />}
+        </Button>
+        <Menu
+          className='bg-[#D10269] bg-opacity-50 z-10 h-screen py-4'
+          mode='inline'
+          inlineCollapsed={collapsed}
+          onClick={({key}) => {
+            if(key === '/dashboardadmin/signout') {
+                signOut()
+            } else {
+              navigate(key)
+            }
+          }}
+          defaultSelectedKeys={[window.location.pathname]}
+          items={[
+            {label: "Admin", className:'bg-white text-blue-500' , key:'/dashboardadmin', },
+            {label: "Dashboard", key:'/dashboardadmin', icon: <FaLaptop/>},
+            {label: "Campaign Approval", key:'/dashboardadmin/campaign', icon:<HiSpeakerphone/> , children: [
+              {label: 'Pending Campaigns', key: '/dashboardadmin/pendingcampaign'},
+              {label: 'Approved Campaigns', key: '/dashboardadmin/approvedcampaign'}
+            ]},
+            {label: "Agency Approval", key:'/dashboardadmin/agency', icon: <HiOfficeBuilding/>}, 
+            {label: "Brand Aproval", key:'/dashboardadmin/brand', icon: <RiPriceTag3Line/>},
+            {label: "Influencers", key:'/dashboardadmin/influencers', icon: <FaIdCard/>},
+            {label: "Support", key:'/dashboardadmin/support', icon: <FaHeadphones/>},
+            {label: "Sign Out", key:'/dashboardadmin/signout', icon: <FaSignOutAlt/>, danger: true},
+          ]}
+        >
+        </Menu>
+        </div>
+        {/* display route content here */}
+          <div className='md:w-4/6 sm:w-3/4 w-1/2 flex flex-col items-center sm:ml-0 ml-12 z-0'>
+          <Outlet />
+          </div>
+        
+      </div>
+  )
+}
+
+export default AdminDashboard
