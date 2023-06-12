@@ -7,7 +7,7 @@ import { useContext, useState } from 'react';
 import { supabase } from '../utils/supaBase'
 import login_img from '../assets/login_img_png.png'
 import { CartState } from '../context/Context'
-
+import LoginImg from '../assets/loginImg.PNG'
 const Login = () => {
 
   const { userState, userDispatch } = CartState();
@@ -160,7 +160,7 @@ const Login = () => {
     
 
     <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
-      <img src={login_img} className='w-screen h-screen'></img>
+      <img src={LoginImg} className='w-screen h-screen'></img>
     </div>
     </div>
   )

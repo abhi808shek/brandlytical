@@ -3,7 +3,7 @@ import styles from "../styles";
 import name from "../assets/logo_with_name.svg";
 import logo from "../assets/logo_tilted.svg";
 // import { init } from "ityped";
-
+import "../Styles/Hero.css"
 import "../Styles/Home.css";
 const Hero = () => {
   // const textRef = useRef();
@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex h-[100vh] md:flex-row flex-col bg-[url('/src/assets/home1.png')] bg-center bg-cover ${styles.paddingY} items-center w-full relative`}
+      className={`flex md:h-[100vh] md:flex-row flex-col bg-[url('/src/assets/home1.png')] bg-center bg-cover ${styles.paddingY} items-center w-full relative`}
     >
       <div
         className={`${styles.flexCenter} absolute animate-[bounce_3s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[50px] h-[50px] md:bottom-60 bottom-[60px] left-[40%] md:left-[35%] bg-opacity-40`}
@@ -45,15 +45,15 @@ const Hero = () => {
             Influencer marketing plateform!
             <br className="sm:block hidden" />
           </p>
-          <div className="ml-8 md:ml-2 w-[100vw] flex flex-col items-start">
-          <p className="mt-[27px] flex justify-center md:item-center items-start     marker: font-dm-sans font-normal text-lg leading-[190%] text-black ">
+          <div className="ml-8  md:ml-2 w-[100vw] flex flex-col items-start">
+          <p className="mt-[27px] flex justify-center md:item-center items-start     marker: font-dm-sans font-normal text-[32px] leading-[190%] text-black ">
             Assess{" "}
             <span className=" px-2 bg-purple-400 bg-opacity-40 rounded-full transform -rotate-x">
               {" "}
               your revenue potential
             </span>
           </p>
-          <p className="  marker: font-dm-sans font-normal text-lg leading-[190%] text-black">
+          <p className="  marker: font-dm-sans font-normal text-[32px] leading-[190%] text-black">
             {" "}
             before committing funds
           </p>
@@ -67,7 +67,10 @@ const Hero = () => {
       <div className={`md:relative absolute right-[4px] bottom-[30px] flex-1 md:my-0 my-10 md:block`}>
         <img
           src={logo}
-          className="animate-[pulse_3s_ease-in-out_infinite] md:w-[300px] md:h-[310px] w-[100px]"
+          className="  md:w-[300px] md:h-[310px] w-[100px]"
+          style={{
+            animation: 'floatAnimation 4s ease-in-out infinite'
+          }}
         />
       </div>
     </section>

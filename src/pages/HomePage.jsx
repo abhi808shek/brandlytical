@@ -49,7 +49,7 @@ const HomePage = () => {
     <div className=" w-full overflow-hidden relative bg-white">
       <div className={`   ${styles.flexCenter} w-full`}>
         <div className={`${styles.boxWidth} `}>
-          <div className="fixed top-0 block w-full z-50    bg-white">
+          <div className="md:fixed  block z-50 w-full   bg-white">
           <Nav />
           </div>
           
@@ -100,7 +100,7 @@ const HomePage = () => {
       </div>
 
       <button
-      className={`fixed right-4 bottom-4 p-3 rounded-full bg-gray-800 text-white shadow-lg transition-opacity ${
+      className={`fixed animate-bounce right-4 bottom-4 p-3 rounded-full border-2 border-white  bg-[rgb(122,24,72)] text-white shadow-lg transition-opacity ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       onClick={scrollToTop}

@@ -2,7 +2,7 @@ import React from "react";
 import redImg from "../assets/Rectangle311.png";
 import yellowImg from "../assets/Rectangle312.svg";
 import blueImg from "../assets/Rectangle313.svg";
- import styles from "../styles";
+import styles from "../styles";
 
 const Cords = () => {
   return (
@@ -16,13 +16,17 @@ const Cords = () => {
           <p className="text-[1.5rem]  font-normal text-start md:text-center font-[DM sans] text-black  mb-[40px]">
             Unleash the Influencer Marketing Revolution: <br />
             Dominate Your Industry with{" "}
-            <span className="font-[Cormorant Garamond]  text-black  ">OUR UNPARELLED EXPERTISE</span>
+            <span className="font-[Cormorant Garamond]  text-black  ">
+              OUR UNPARELLED EXPERTISE
+            </span>
           </p>
         </div>
         <div className=" md:flex   sm:grid-cols-2 xs:grid-cols-1 m-auto sm:grid   md:gap-4 gap-4">
-
           <div className="min-h-[420px] shadow-lg hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] w-[95%] md:w-[350px] hover:animate-pluse  cursor-pointer   m-auto bg-[#fff8ee] relative">
-            <div className="flex absolute   top-0 left-0   ">
+            <div className="flex absolute    top-0 left-0   "
+             style={{
+              animation: 'LRfloatAnimation 3s ease-in-out infinite'
+            }}>
               <img
                 src={redImg}
                 className="h-[82px] w-[64px] mx-1 z-0"
@@ -46,7 +50,11 @@ const Cords = () => {
           </div>
 
           <div className="min-h-[420px] shadow-lg hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] hover:animate-pulse animate-ping_1s_infinite cursor-pointer  w-[95%] md:w-[350px]  m-auto bg-[#fff8ee] relative">
-            <div className="flex absolute animate-[pulse_4s_infinite] top-0 right-0 z-0">
+            <div
+            style={{
+              animation: 'LRfloatAnimation 3s ease-in-out infinite'
+            }}
+            className="flex absolute animate-[pulse_4s_infinite] top-0 right-0 z-0">
               <img
                 src={blueImg}
                 className="h-[40px] w-[42px] mx-1 rotate-90"
@@ -68,10 +76,14 @@ const Cords = () => {
           </div>
 
           <div className="min-h-[420px]  shadow-lg w-[95%] hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] hover:animate-pulse animate-ping_1s_infinite cursor-pointer  md:w-[350px]  m-auto bg-[#fff8ee] relative">
-            <div className="flex absolute  bottom-0 right-0 rotate-180">
+            <div
+            
+            className="flex absolute  bottom-0 right-0 rotate-180"
+            
+            >
               <img
                 src={blueImg}
-                className="h-[40px] w-[42px] mx-1 rotate-90"
+                className="h-[40px] w-[42px]  mx-1 rotate-90"
                 alt="redImg"
               />
               <img src={redImg} alt="yellow" className="h-[82px] w-[60px]" />
@@ -86,8 +98,11 @@ const Cords = () => {
             </p>
             <img
               src={yellowImg}
-              className="absolute animate-[pulse_2s_infinite] top-0 left-0 w-[82px] h-[65px] rotate-180"
+              className="absolute   top-0 left-0 w-[82px] h-[65px] rotate-180"
               alt=""
+              style={{
+                animation: 'LRfloatAnimation 3s ease-in-out infinite'
+              }}
             />
           </div>
 
@@ -109,15 +124,22 @@ const Cords = () => {
             </p>
             <img
               src={yellowImg}
-              className="absolute animate-[pulse_4s_infinite] top-0 right-0 w-[82px] h-[65px]"
+              className="absolute  top-0 right-0 w-[82px] h-[65px]"
               alt=""
+              style={{
+                animation: 'LRfloatAnimation 3s ease-in-out infinite'
+              }}
             />
           </div>
         </div>
       </div>
-       
-      <div className={`${styles.flexCenter} absolute animate-[pulse_3s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[50px] h-[50px] bottom-60 left-[35%] bg-opacity-40 sm:block hidden`}></div>
-      <div className={`${styles.flexCenter} absolute animate-[pulse_4s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[40px] h-[40px] bottom-60 left-[35%] sm:block hidden`}></div>
+
+      <div
+        className={`${styles.flexCenter} absolute animate-[pulse_3s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[50px] h-[50px] bottom-60 left-[35%] bg-opacity-40 sm:block hidden`}
+      ></div>
+      <div
+        className={`${styles.flexCenter} absolute animate-[pulse_4s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[40px] h-[40px] bottom-60 left-[35%] sm:block hidden`}
+      ></div>
     </>
   );
 };

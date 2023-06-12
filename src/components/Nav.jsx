@@ -3,11 +3,11 @@ import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.svg'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate ,useLocation } from 'react-router-dom'
 import { supabase } from '../utils/supaBase'
 
 const Nav = () => {
-
+  const location = useLocation();
   const navigate = useNavigate()
   const [toggle, setToggle] = useState(false)
 
@@ -34,18 +34,18 @@ const Nav = () => {
         // {name:"Team",link:"/"},
         // {name:"Clients",link:"#clients"},
         {name:"Case Studies",link:"#casestudy"},
-        {name:"Press Release",link:"/"},
+        {name:"Press Release",link:"#"},
       ];
       let [open,setOpen]=useState(false);
 
     return (
       <div className="w-full    flex justify-around pt-3 bg-white">
-        <div className="md:flex   items-center justify-between py-4 md:px-10 px-2">
+        <div className="md:flex w-full    items-center justify-between py-4 md:px-10 px-2">
           <div
-            className="font-bold text-2xl cursor-pointer flex items-center font-[DM Sans] 
+            className="font-bold text-2xl  cursor-pointer flex items-center font-[DM Sans] 
         text-gray-800"
           >
-            <span className="text-3xl mr-60 pt-2">
+            <span className="text-3xl     pt-2">
               <img src={logo} className="w-[255px]   h-[34px]" />
             </span>
           </div>
@@ -69,14 +69,18 @@ const Nav = () => {
             {Links.map((link) => (
               <li
                 key={link.name}
-                className="lg:ml-6 ml-4 lg:text-[18px] md:text-[14px] md:my-0 my-7"
+                className={`lg:ml-6 ml-4 lg:text-[18px] md:text-[14px] md:my-0 my-7 ${
+                  location.pathname === link.link ? 'font-bold' : ''
+                }`}
               >
-                <a
-                  href={link.link}
-                  className="text-black hover:text-gray-400 duration-500"
-                >
-                  {link.name}
-                </a>
+                 <a
+              href={link.link}
+              className={`text-black hover:font-bold ${
+                location.hash === link.link ? 'font-bold  underline text-[rgb(122,24,72)]' : ''
+              }`}
+            >
+              {link.name}
+            </a>
               </li>
             ))}
             {!session && (

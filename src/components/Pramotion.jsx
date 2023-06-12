@@ -9,12 +9,12 @@ import blueImg from '../assets/Rectangle312.svg'
 import redImg from '../assets/Rectangle313.svg'
 const Pramotion = () => {
   return (
-    <div id='pramotion' className=' hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[79%] relative w-[80%] m-auto  '> 
+    <div id='pramotion' className=' hover:scale-95 mb-[140px]   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[79%] relative w-[80%] m-auto  '> 
     <div  className='promotionTextDiv '>
         <div className='promotionTextDivMain'>
-        <p className="  w-485 h-156 left-[calc(50% - 485px/2 - 452.5px)] top-[3269px] font-cormorant-garamond font-semibold text-64 leading-78 text-black"  >Ready To Run</p>
-        <p className="  w-485 h-156 left-[calc(50% - 485px/2 - 452.5px)] top-[3269px] font-cormorant-garamond font-semibold text-64 leading-78 text-black">Your Campaign?</p>
-        <button class="custom-btn btn-16  ">Start Now</button>
+        <p className="text-start   w-485 h-156 left-[calc(50% - 485px/2 - 452.5px)] top-[3269px] font-[cormorant-garamond]   text-64 leading-78 text-black"  >Ready To Run</p>
+        <p className="  w-485 h-156 left-[calc(50% - 485px/2 - 452.5px)] top-[3269px] font-[cormorant-garamond]   text-64 leading-78 text-black">Your Campaign?</p>
+        <button class="custom-btn btn-16 font-[DM Sans] ">Start Now</button>
         <div className='absolute  animate-[bounce_4s_ease-in-out_infinite] flex items-end bottom-0 left-[20px]   h-[100px]'>
             <div className='   w-fit  '>
                 <img src={redImg} className="h-[40px] w-[42px] rotate-[270deg] mt=[70px] ml-[-10px]"  alt="redImg"/>
@@ -30,16 +30,16 @@ const Pramotion = () => {
 
 <div className='PramotionCardDiv'>
     <div className="  hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:p-[5] hover:shadow-lg animate-[bounce_4s_ease-in-out_infinite] cursor-pointer">
-        <p>Brand Awareness/Promotion</p>
+        <p className='font-[Cormorant Garamond]'>Brand Awareness/Promotion</p>
     </div>
     <div  className="  hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:p-[10] hover:shadow-lg  animate-[bounce_3s_ease-in-out_infinite] cursor-pointer">
-        <p  >Estimated ROI Prediction</p>
+        <p className='font-[Cormorant Garamond]' >Estimated ROI Prediction</p>
     </div>
     <div className="  hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:p-[10] hover:shadow-lg  animate-[bounce_2s_ease-in-out_infinite] cursor-pointer">
-        <p cursor-pointer>Successful Campaign Execution</p>
+        <p className='font-[Cormorant Garamond]'>Successful Campaign Execution</p>
     </div>
     <div className="  hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:m-[0] hover:shadow-lg  animate-[bounce_3s_ease-in-out_infinite] cursor-pointer">
-        <p cursor-pointer>Performance Analysis</p>
+        <p className='font-[Cormorant Garamond]'>Performance Analysis</p>
     </div>
 </div>
 <img src={wp} className=' absolute cursor-pointer  animate-[bounce_7s_ease-in-out_infinite] right-0 top-0 mr-[30px] mt-[50px]   w-[50px] h-[50px]' />

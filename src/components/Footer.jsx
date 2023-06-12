@@ -10,11 +10,13 @@ import blueImg2 from "../assets/blue2img.png";
 import Fshweta from"../assets/Fshweta.png"
 import Fimg21 from"../assets/Fimg21.png"
 import Franveer from"../assets/Franveer.png"
+import styles from "../styles";
+ 
 const Footer = () => {
   return (
     <section
       id="footer"
-      className={`flex h-[100vh] w-full relative mt-[200px]  flex-col bg-[#7A1848] pt-56 sm:px-4 px-6 md:items-start items-center md:text-start text-center`}
+      className={`flex md:h-[100vh] xs:h-auto ss:h-auto sm:h-[120vh] w-full relative mt-[200px]  flex-col bg-[#7A1848] pt-56 sm:px-4 px-6 md:items-start items-center md:text-start text-center`}
     >
       <div className="m-auto w-[80%] justify-between  right-0 left-0 flex bg-[#FFC9E4] flex-wrap   absolute rounded-xl mt-[-150px] top-0">
         <div className="flex flex-col items-start md:w-[30%] w-[90%] md:m-[70px] m-[20px]    ">
@@ -22,17 +24,24 @@ const Footer = () => {
             <p className="px-3 font-bold font-[DM Sans] text-black text-[22px]">Socialize</p>
           </div>
           <div className="flex flex-row">
-            <div className="p-4  m-[10px] cursor-pointer animate-spin border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
+            <div className="p-4  m-[10px] animate-[bounce_2s_ease-in-out_infinite] cursor-pointer hover:animate-spin border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
               {" "}
-              <img src={insa} className="w-[100%]  h-[100]%" />
+              <Link to="https://www.instagram.com/brandlytical/">
+              <img src={insa} className="w-[100%]   h-[100]%" />
+              </Link>
+              
             </div>
-            <div className="p-4  m-[10px] cursor-pointer animate-spin border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
+            <div className="p-4  m-[10px] animate-[bounce_3s_ease-in-out_infinite]  cursor-pointer hover:animate-spin border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
               {" "}
+
               <img src={fw} className="w-[100%]    cursor-pointer h-[100]%" />
             </div>
-            <div className="p-4  m-[10px] animate-spin cursor-pointer border-2 border-[#7A1848]  border-dotted rounded-full w-[70px] h-[70px] bg-white">
+            <div className="p-4  m-[10px] animate-[bounce_4s_ease-in-out_infinite]  hover:animate-spin cursor-pointer border-2 border-[#7A1848]  border-dotted rounded-full w-[70px] h-[70px] bg-white">
               {" "}
-              <img src={fi} className="w-[100%]    cursor-pointer   h-[100]%" />
+              <Link to='https://www.facebook.com/brandlytical/'>
+                <img src={fi} className="w-[100%]    cursor-pointer   h-[100]%" />
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -41,10 +50,10 @@ const Footer = () => {
             <img src={Fimg21} alt="" />
           </div>
          
-          <div className="absolute w-[100px] h-[150px]   ml-[140px]">
+          <div className="absolute w-[60px] h-[100px]   ml-[140px]">
             <img src={yellowImg} className="h-[100%]  m-auto w-[100%]" alt="" />
           </div>
-         <div className="absolute w-[120px] h-[120px] mt-[30px]  right-0">
+         <div className="absolute w-[120px] h-[100px] mt-[20px]  right-0">
             <img src={Fshweta} className="h-[100%] m-auto w-[100%]" alt="" />
           </div>
              <div className="absolute w-[100px] h-[70px] mt-[130px]   ">
@@ -62,6 +71,21 @@ const Footer = () => {
            
         </div>
       </div>
+      <div
+        className={`${styles.flexCenter} absolute animate-[bounce_3s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[50px] h-[50px] md:bottom-60 bottom-[60px] left-[40%] md:left-[35%] bg-opacity-40`}
+      ></div>
+      <div
+        className={`${styles.flexCenter} absolute animate-[bounce_4s_ease-in-out_infinite] bg-[#5D35FD] rounded-full w-[40px] h-[40px] md:bottom-60 bottom-[60px] md:left-[35%] left-[40%]`}
+      ></div>
+      <div
+        className={`${styles.flexCenter} absolute animate-[bounce_3s_ease-in-out_infinite] bg-[#D10269] first-letter:  rounded-full w-[30px] h-[30px]  md:bottom-14 md:left-[35%] left-[20px] bottom-[20px] bg-opacity-60`}
+      ></div>
+      <div
+        className={`${styles.flexCenter} absolute animate-[bounce_4s_ease-in-out_infinite] bg-[#D10269] rounded-full w-[20px] h-[20px]  md:bottom-20 bottom-[20px] left-[20px] md:left-[35%] ml-1`}
+      ></div>
+      <div
+        className={`flex-1 ss:${styles.flexStart} flex-col xl:px-0 sm:pl-10  md:text-start text-center md:items-start items-center min-w-[900px]`}
+      ></div>
       <div className="flex flex-col w-full mb-10 md:h-[100%] h-[50%] m-auto justify-center md:justify-between   ">
         <div className="flex item-end w-auto sm:flex-row sm:w-[100%]    flex-col lg:pl-[400px] md:pl-[200px]">
          
@@ -86,7 +110,21 @@ const Footer = () => {
             CONTACT US
           </p>
         </div>
-
+   <div className=" p-[2%]  flex  justify-center gap-10 item-start md:w-[100%] m-auto w-full ">
+         <div className="  ">
+            
+          <p className="text-white font-[DM Sans] text-start  font-bold  text-[20px]">  Phone:</p>
+          <p className="text-white font-[DM Sans] text-start  text-[18px]">+918800880730</p>
+         </div>
+         <div>
+          <p className="text-white font-[DM Sans] text-start  font-bold  text-[20px]">Send Email:</p>
+          <p className="text-white font-[DM Sans] text-start cursor-pointer  text-[18px]">contact@brandlytical.in</p>
+         </div>
+         <div>
+          <p className="text-white font-[DM Sans] text-start  font-bold  text-[20px]">Address:</p>
+          <p className="text-white font-semi text-start  font-[DM Sans] text-[18px]">2nd floor, plot no. 264, Udyog Vihar Phase 1, Udyog Vihar, Sector 20, Gurugram, Haryana 122016.</p>
+         </div>
+   </div>
         <div className="     text-white  w-full">
           <hr className="w-full" />
           <p  className="font-[DM Sans] text-white">Copyrights @2023 Brandlytical</p>

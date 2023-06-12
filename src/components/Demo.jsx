@@ -7,19 +7,19 @@ import Rimg from "../assets/Rback.png";
 
 const Demo = () => {
   return (
-    <div className="  bg-[#FFEBF5] flex gap-10   shadow-lg md:w-[80%] w-[90%] h-[70vh] m-auto">
+    <div className="mt-[120px] mb-[120px] bg-[#FFEBF5] flex gap-10   shadow-lg md:w-[80%] w-[90%] h-[70vh] m-auto">
       <div className="  flex flex-col justify-around       text-start    border-black-500 w-[80%] h-[70%] m-auto">
-        <p className="font-cormorant-garamond  w-[80%] ml-[60px]      text-start font-bold text-4xl leading-10 text-black">
+        <p className="font-[cormorant-garamond]  w-[80%] ml-[60px]      text-start font-bold text-4xl leading-10 text-black">
           Ready To
           <br />
           Get Started?
         </p>
-        <p className="font-[dm-sans] font-normal  text-start  w-[80%] ml-[60px] text-xl leading-13 text-black">
+        <p className="font-[DM Sans] font-normal  text-start  w-[80%] ml-[60px] text-xl leading-13 text-black">
           See Your Campaign ROI Before
           <br />
            You Spend a Dime. 
         </p>
-        <div className="p-[10px]    cursor-pointer ml-[60px]  text-center w-[220px]   hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[200] hover:shadow-lg   bg-[#7A1848] rounded-md   text-white "  >Book a Demo</div>
+        <div className="p-[10px]    cursor-pointer ml-[60px] font-[DM Sans]  text-center w-[220px]   hover:scale-95    transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[200] hover:shadow-lg   bg-[#7A1848] rounded-md   text-white "  >Book a Demo</div>
 
       </div>
       <div className="  flex  relative    w-[80%] h-[100%] overflow-hidden m-auto">

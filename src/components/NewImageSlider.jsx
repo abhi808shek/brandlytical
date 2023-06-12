@@ -74,14 +74,14 @@ const NewImageSlider = () => {
             > */}
                 <img className={`absolute lg:top-20 top-40 bottom-0 left-0 right-0 sm:top-40   w-full h-full`} src={Slider} />
               <p
-                className="font-bold font-[DM Sans'] md:text-[30px] text-black z-10  text-[25px]"
+                className="font-bold font-[DM Sans'] md:text-[30px] text-white z-10  text-[25px]"
                 style={{ marginTop: "60%", marginBottom: "10px" }}
               >
                 {elem?.title}
                 
               </p>
               <p
-                className="text-black font-[DM Sans]   w-full  text-[14px] font-bold     z-10"
+                className="text-white font-[DM Sans]   w-full  text-[14px] font-bold     z-10"
                 
              >
                 {elem?.description}
