@@ -1,31 +1,30 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import img1 from '../assets/imageslider1.svg'
-
+ 
 const ImageSlider = () => {
 
-    const responsive = {
-        desktop: {
-          breakpoint: { max: 3000, min: 1400 },
-          items: 1,
-          partialVisibilityGutter: 500 // this is needed to tell the amount of px that should be visible.
-        },
-        tablet: {
-          breakpoint: { max: 1400, min: 650 },
-          items: 1,
-          partialVisibilityGutter: 250 // this is needed to tell the amount of px that should be visible.
-        },
-        mobile: {
-          breakpoint: { max: 650, min: 0 },
-          items: 1,
-          partialVisibilityGutter: 0 // this is needed to tell the amount of px that should be visible.
-        }
-      }
+    // const responsive = {
+    //     desktop: {
+    //       breakpoint: { max: 3000, min: 1400 },
+    //       items: 2,
+    //       partialVisibilityGutter: 200 // this is needed to tell the amount of px that should be visible.
+    //     },
+    //     tablet: {
+    //       breakpoint: { max: 1400, min: 650 },
+    //       items: 2,
+    //       partialVisibilityGutter: 250 // this is needed to tell the amount of px that should be visible.
+    //     },
+    //     mobile: {
+    //       breakpoint: { max: 650, min: 0 },
+    //       items: 1,
+    //       partialVisibilityGutter: 0 // this is needed to tell the amount of px that should be visible.
+    //     }
+    //   }
 
   return (
     <div className='flex sm:items-start items-center w-screen'>
-        <Carousel
+        {/* <Carousel
         partialVisible={true}
         responsive={responsive}
         keyBoardControl={true}
@@ -36,7 +35,7 @@ const ImageSlider = () => {
         dotListClass='text-purple-200'
         >
 
-        <div className={`flex flex-col bg-slider-img1 lg:w-[800px] lg:h-[500px] sm:w-[550px] sm:h-[400px] w-[400px] h-[500px] relative items-center px-32 text-center`}>
+        <div className={`flex flex-col bg-slider-img1 lg:w-[400px] lg:h-[500px] sm:w-[550px] sm:h-[400px] w-[400px] h-[500px] relative items-center px-32 text-center`}>
         <p className='absolute bottom-40 font-bold text-[32px]'>Influencer Marketing</p>
         <p className='absolute bottom-24 px-40'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </p>
         </div>
@@ -54,7 +53,7 @@ const ImageSlider = () => {
 
 
         
-        </Carousel>
+        </Carousel> */}
     </div>
   )
 }

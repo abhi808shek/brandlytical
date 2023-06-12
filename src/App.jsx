@@ -41,7 +41,7 @@ import AdminReports from './components/AdminReports';
 import UserReports from './pages/UserReports';
 import UserSupportData from './pages/UserSupportData';
 import BulkImport from './pages/BulkImport';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 
 
 

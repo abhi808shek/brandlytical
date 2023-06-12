@@ -33,20 +33,20 @@ const Nav = () => {
         {name:"Our Services",link:"#services"},
         // {name:"Team",link:"/"},
         // {name:"Clients",link:"#clients"},
-        {name:"Case Studies",link:"/"},
+        {name:"Case Studies",link:"#casestudy"},
         {name:"Press Release",link:"/"},
       ];
       let [open,setOpen]=useState(false);
 
     return (
-      <div className="w-full flex justify-around pt-3 bg-white">
-        <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
+      <div className="w-full    flex justify-around pt-3 bg-white">
+        <div className="md:flex   items-center justify-between py-4 md:px-10 px-2">
           <div
             className="font-bold text-2xl cursor-pointer flex items-center font-[DM Sans] 
         text-gray-800"
           >
-            <span className="text-3xl mr-1 pt-2">
-              <img src={logo} className="w-[255px] h-[34px]" />
+            <span className="text-3xl mr-60 pt-2">
+              <img src={logo} className="w-[255px]   h-[34px]" />
             </span>
           </div>
 
@@ -57,7 +57,7 @@ const Nav = () => {
             <img
               src={open ? close : menu}
               alt="menu"
-              className=" object-contain bg-[#D10269] p-4 rounded-md"
+              className=" object-contain bg-[#D10269]  p-4 m-[10px] rounded-md"
             />
           </div>
 

@@ -40,9 +40,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`pb-36 sm:pb-0 w-full flex justify-between items-center navbar bg-red-400`}>
+    <nav className={`pb-36 sm:pb-0 w-full  flex justify-between items-center navbar bg-red-400`}>
       <Link to={'/'}>
-      <img src={logo} className='w-[117px] h-[128px]'/>
+      <img src={logo} className='w-[117px]   h-[128px]'/>
       </Link>
       
 

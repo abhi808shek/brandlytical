@@ -1,84 +1,94 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import img1 from "../assets/imageslider1.svg";
+import Slider from "../assets/slider1.svg";
 
 const NewImageSlider = () => {
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1400 },
-      items: 1,
-      partialVisibilityGutter: 500, // this is needed to tell the amount of px that should be visible.
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
     },
     tablet: {
-      breakpoint: { max: 1400, min: 650 },
-      items: 1,
-      partialVisibilityGutter: 250, // this is needed to tell the amount of px that should be visible.
+      breakpoint: { max: 1024, min: 780 },
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 650, min: 0 },
+      breakpoint: { max: 780, min: 0 },
       items: 1,
-      partialVisibilityGutter: 0, // this is needed to tell the amount of px that should be visible.
     },
   };
   const influncerList = [
     {
-      image: "bg-slider-img1",
+      image: `bg-slider-img1`,
       title: "  Influencer Marketing",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+        "Our influencer marketing services utilise influencers'  social acumen to offer your company a human voice. We pair you up with influencers who have substantial audiences in your target market and who provide interesting content that appeals to their .",
     },
     {
-      image: "bg-slider-img1",
-      title: "  Influencer Marketing",
+      image: "bg-slider-img3",
+      title: "Podcast Management",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+        "Our team provides comprehensive support and   the entire process to ensure a successful podcast or talk show debut. Benefit from our extensive experience and professional studio setup as we help you bring your podcasting vision to life."
     },
     {
-      image: "bg-slider-img1",
+      image: "bg-slider-img2",
       title: "  Influencer Marketing",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+        "Our influencer marketing services utilise influencers'  social acumen to offer your company a human voice. We pair you up with influencers who have substantial audiences in your target market and who provide interesting content that appeals to their .",
     },
     {
-      image: "bg-slider-img1",
-      title: "  Influencer Marketing",
+      image: "bg-slider-img4",
+      title: "Podcast Management",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+        "Our team provides comprehensive support and  the entire process to ensure a successful podcast or talk show debut. Benefit from our extensive experience and professional studio setup as we help you bring your podcasting vision to life."
     },
-    {
-      image: "bg-slider-img1",
-      title: "  Influencer Marketing",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
-    },
+     
   ];
+
+  const itemStyle = {
+    margin: "auto",
+  };
+
   return (
-    <div>
+    <div  className="  w-[100%]   md:w-[80%]  m-auto">
       <Carousel
         responsive={responsive}
         partialVisible={true}
         keyBoardControl={true}
         showDots={true}
-        // ssr={true} // means to render carousel on server-side.
+        autoPlay={true} 
+      autoPlaySpeed={3000}
+      arrows={false}
         infinite={true}
-        itemClass="mb-20 lg:pl-40 md:pl-28 sm:pl-20 xs:pl-11 pl-0 flex sm:items-start items-center "
+        itemClass="carousel-item"
         dotListClass="text-purple-200"
       >
-        {influncerList?.map((elem) => (
-          <div
-            className={`flex flex-col rounded-md ${elem?.image} lg:w-[800px] lg:h-[500px] sm:w-[550px] sm:h-[400px] w-[400px] h-[500px] relative items-center md:px-24 px-10 text-center`}
-          >
-            <p className="lg:pt-80 pt-80 sm:pt-60 pb-2 font-bold md:text-[30px] text-[25px]">
-             {elem?.title}
-            </p>
-            <p className="text-black text-opacity-70 font-bold">
-            {elem?.description}
-            </p>
+        {influncerList?.map((elem, index) => (
+          <div key={index} className="carousel-item-content pb-10 cursor-pointer" style={itemStyle}>
+            <div
+              className={`flex flex-col  hover:scale-95   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[500px] hover:shadow-lg  rounded-md ${elem?.image} m-auto lg:w-[510px] lg:h-[400px] sm:w-[300px] sm:h-[450px] w-[400px] h-[500px] relative items-center   px-10 text-center   `}
+            >
+            {/* <div
+              className={`flex flex-col rounded-md ${elem?.image} m-auto lg:w-[510px] lg:h-[400px] sm:w-[500px] sm:h-[400px] w-[400px] h-[500px] relative items-center md:px-24 px-10 text-center border-2 border-red-500`}
+            > */}
+                <img className={`absolute lg:top-20 top-40 bottom-0 left-0 right-0 sm:top-40   w-full h-full`} src={Slider} />
+              <p
+                className="font-bold font-[DM Sans'] md:text-[30px] text-black z-10  text-[25px]"
+                style={{ marginTop: "60%", marginBottom: "10px" }}
+              >
+                {elem?.title}
+                
+              </p>
+              <p
+                className="text-black font-[DM Sans]   w-full  text-[14px] font-bold     z-10"
+                
+             >
+                {elem?.description}
+              </p>
+            </div>
           </div>
         ))}
-
-      
       </Carousel>
     </div>
   );

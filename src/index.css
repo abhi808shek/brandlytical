@@ -26,8 +26,14 @@
 
 * {
   scroll-behavior: smooth;
+ 
 }
-
+.Cormorant{
+  font-family: "Cormorant Garamond";
+}
+.font_sanse{
+  font-family: "DM Sanse";
+}
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
