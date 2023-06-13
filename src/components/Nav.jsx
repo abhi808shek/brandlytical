@@ -42,11 +42,14 @@ const Nav = () => {
       <div className="w-full    flex justify-around pt-3 bg-white">
         <div className="md:flex w-full    items-center justify-between py-4 md:px-10 px-2">
           <div
-            className="font-bold text-2xl  cursor-pointer flex items-center font-[DM Sans] 
+            className="font-bold text-2xl    cursor-pointer flex items-center font-[DM Sans] 
         text-gray-800"
           >
             <span className="text-3xl     pt-2">
+            
               <img src={logo} className="w-[255px]   h-[34px]" />
+               
+             
             </span>
           </div>
 
