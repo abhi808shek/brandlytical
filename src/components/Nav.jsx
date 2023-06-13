@@ -2,6 +2,8 @@ import React from 'react'
 import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 import logo from '../assets/logo.svg'
+import navLogo2 from '../assets/navlogo2.png'
+
 import { useState, useEffect } from 'react'
 import { Link, useNavigate ,useLocation } from 'react-router-dom'
 import { supabase } from '../utils/supaBase'
@@ -47,7 +49,7 @@ const Nav = () => {
           >
             <span className="text-3xl     pt-2">
             
-              <img src={logo} className="w-[255px]   h-[34px]" />
+              <img src={navLogo2} className="w-[255px]   h-[34px]" />
                
              
             </span>

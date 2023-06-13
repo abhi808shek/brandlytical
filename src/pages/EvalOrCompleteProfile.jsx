@@ -5,8 +5,7 @@ import { useState, useEffect } from 'react';
 import styles from '../styles';
 import Navbar from '../components/Navbar';
 import { checkValuesAgainstBoundaries } from 'react-range';
-import login_img from '../assets/login_img_png.png'
-import InputField from '../components/InputField';
+ import InputField from '../components/InputField';
 import { CartState } from '../context/Context'
 import LoginImg from '../assets/loginImg.PNG'
 const EvalOrCompleteProfile = () => {

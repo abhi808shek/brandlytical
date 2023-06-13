@@ -2,6 +2,7 @@ import React, { useEffect,useRef  } from "react";
 import styles from "../styles";
 import name from "../assets/logo_with_name.svg";
 import logo from "../assets/logo_tilted.svg";
+import B2 from "../assets/B2.png";
 // import { init } from "ityped";
 import "../Styles/Hero.css"
 import "../Styles/Home.css";
@@ -36,15 +37,20 @@ const Hero = () => {
         className={`flex-1 ss:${styles.flexStart} flex-col xl:px-0 sm:pl-10  md:text-start text-center md:items-start items-center min-w-[900px]`}
       >
         <div className="flex flex-col justify-between w-full md:items-start items-center">
-          <p   className=" text-black font-normal   font-[Cormorant Garamond] md:text-6xl text-2xl font-boldleading-tight tracking-normal text-left">
+          <p   className=" text-black font-normal text-[64px]   font-[cormorant-garamond] md:text-6xl text-2xl font-boldleading-tight tracking-normal text-left">
             Welcome
-            <span   className="bg-[#FFD397] rounded-full">
-               to our revenue- driven
-            </span>{" "}
+            <span   className="bg-[#FFD397]   ml-[10px] rounded-full">
+               to our revenue- dr
+            </span> 
+            <span>iven</span>
+            </p>
             <br className="sm:hidden block" />
+            <p className=" text-black font-normal mt-[20px] text-[64px]  font-[cormorant-garamond] md:text-6xl text-2xl font-boldleading-tight tracking-normal text-left">
             Influencer marketing plateform!
+            </p>
+            
             <br className="sm:block hidden" />
-          </p>
+          
           <div className="ml-8  md:ml-2 w-[100vw] flex flex-col items-start">
           <p className="mt-[27px] md:text-[32px] sm:text-[20px] flex justify-center md:item-center items-start     marker: font-dm-sans font-normal leading-[190%] text-black ">
             Assess{" "}
@@ -59,14 +65,15 @@ const Hero = () => {
           </p>
           </div>
           
+          <div className="p-[10px] hover:scale-95 hover:shadow-lg  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[210px] ml-[15px] cursor-pointer  text-center w-[220px] mt-[30px]  bg-[#7A1848] rounded-md   text-white "  >Contact us</div>
 
-          <button className="custom-btn btn-15 border-2    animate-[bounce_4s_infinite]"> Contact us</button>
+          {/* <button className="custom-btn btn-15 border-2    "> Contact us</button> */}
         </div>
       </div>
 
       <div className={`md:relative absolute right-[4px] bottom-[30px] flex-1 md:my-0 my-10 md:block`}>
         <img
-          src={logo}
+          src={B2}
           className="  md:w-[300px] md:h-[310px] w-[100px]"
           style={{
             animation: 'floatAnimation 4s ease-in-out infinite'

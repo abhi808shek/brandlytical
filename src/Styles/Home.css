@@ -1,3 +1,7 @@
+.bg-text::selection {
+  @apply bg-yellow-300;
+}
+
 body {
   background: #e0e5ec;
 }
@@ -175,7 +179,9 @@ button {
   flex-direction: column;
   width: 300px;
 
-  align-items: center;
+   text-align: start;
+   align-content: start;
+   align-items: start;
   padding: 20px;
 }
 .promotionTextDivMain p {
@@ -192,7 +198,7 @@ button {
   flex-direction: column;
   gap: 10px;
   margin-top: -140px;
-  margin-right: 50px;
+  margin-right: 20px;
   right: 0;
 }
 
@@ -200,7 +206,7 @@ button {
   padding: 5px;
    
   color: white;
-  width: 500px;
+  width: 600px;
   background-color: #dfdeff;
 }
 
@@ -311,3 +317,7 @@ button {
     /* height: 90vh; */
   }
 }
+
+
+
+

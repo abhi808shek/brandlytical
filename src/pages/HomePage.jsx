@@ -59,8 +59,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`} id="about">
+      <div className={`bg-white  ${styles.flexStart}`}>
+        <div   id="about">
           <About />
         </div>
       </div>

@@ -31,7 +31,7 @@ const Studio = () => {
   </div>
   
         </div>
-        <div className="p-[10px] hover:scale-95 hover:shadow-lg  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[210px]  cursor-pointer  text-center w-[220px] mt-[30px] m-auto bg-[#7A1848] rounded-md   text-white "  >Book a Studio</div>
+        <div className="p-[10px] mt-[80px] mb-[80px] hover:scale-95 hover:shadow-lg  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[210px]  cursor-pointer  text-center w-[220px]   m-auto bg-[#7A1848] rounded-md   text-white "  >Book a Studio</div>
 
     </div>
   )

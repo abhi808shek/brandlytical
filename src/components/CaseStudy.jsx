@@ -8,13 +8,13 @@ const CaseStudy = () => {
         <p className="font-[cormorant-garamond] font-normal mb-[40px] text-[44px] text-center text-black">Case Studies</p>
         <div className='CaseStuImgDiv'>
             <div>
-            <div className='hover:scale-95 hover:shadow-lg  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px]'>
+            <div className='hover:scale-95  cursor-pointer  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) '>
                 <img src={c1} alt="" />
             </div>
             <p className=' text-[20px]  font-bold text-black  '>mcaffeineofficial</p>
             </div>
             <div>
-            <div className='hover:scale-95 hover:shadow-lg  transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px]'>
+            <div className='hover:scale-95   cursor-pointer transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) '>
                 <img src={c2} alt="" />
             </div>
             <p className=' text-[20px] font-bold text-black'>olayindia</p>

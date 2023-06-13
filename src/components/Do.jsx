@@ -9,11 +9,11 @@ const Do = () => {
     >
       <div className="flex relative w-full md:items-start items-center">
         <div className="md:items-start items-start  ">
-          <h1
-            className="flex-1 text-start font-normal md:text-[28px] text-[25px] font-[DM Sans] text-black"
+          <p
+            className="flex-1 font-[500] text-start font-[DM sans] md:text-[28px] text-[20px]      text-black"
           >
             WHAT WE CAN DO FOR YOU?
-          </h1>
+          </p>
           <h1 className="flex-1 text-left   md:text-[50px] text-[40px] font-[Cormorant Garamond] text-black">
             Services We Can <br className="sm:block hidden" />
             Help You With

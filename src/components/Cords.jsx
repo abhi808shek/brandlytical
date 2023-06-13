@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import redImg from "../assets/Rectangle311.png";
 import yellowImg from "../assets/Rectangle312.svg";
 import blueImg from "../assets/Rectangle313.svg";
 import styles from "../styles";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Cords = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className=" md:w-[80%] w-[95%]    m-auto mt-5 mb-5">
@@ -22,113 +26,171 @@ const Cords = () => {
           </p>
         </div>
         <div className=" md:flex   sm:grid-cols-2 xs:grid-cols-1 m-auto sm:grid   md:gap-4 gap-4">
-          <div className="min-h-[420px] shadow-lg hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] w-[95%] md:w-[350px] hover:animate-pluse  cursor-pointer   m-auto bg-[#fff8ee] relative">
-            <div className="flex absolute    top-0 left-0   "
+          <div className="min-h-[400px] shadow-lg   w-[95%] md:w-[350px]    cursor-pointer   m-auto bg-[#fff8ee] relative">
+            {/* <div className="flex absolute     top-0 left-0   "
+           
              style={{
-              animation: 'LRfloatAnimation 3s ease-in-out infinite'
+              // animation: 'LRfloatAnimation 3s ease-in-out infinite'
             }}>
               <img
                 src={redImg}
-                className="h-[82px] w-[64px] mx-1 z-0"
+                className="h-[60px] w-[50px] mx-1 z-0"
                 alt="redImg"
               />
-              <img src={blueImg} alt="yellow" className="h-[40px] w-[41px]" />
-            </div>
-            <h3 className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600]  ">
+              <img src={blueImg} alt="yellow" className="h-[30px] w-[35px]" />
+            </div> */}
+            <img
+              src={yellowImg}
+              className="absolute   top-0 right-0 w-[60px] h-[50px] rotate-180"
+              alt=""
+              style={
+                {
+                  // animation: 'LRfloatAnimation 3s ease-in-out infinite'
+                }
+              }
+            />
+            <h3
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1200"
+              className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600]  "
+            >
               ROI Prediction Tool
             </h3>
-            <p className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+              className="text-[20px] leading-[31px] ml-[20px] text-start font_sanse"
+            >
               We help you get the most out of your influencer marketing
               campaigns by predicting your ROI before you start.
             </p>
             {/* blue icon */}
-            <img
-              src={yellowImg}
-              className="absolute animate-[bounce_2s_ease-in-out_infinite] bottom-0 right-0 w-[82px] h-[65px]"
-              alt=""
-            />
-          </div>
-
-          <div className="min-h-[420px] shadow-lg hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] hover:animate-pulse animate-ping_1s_infinite cursor-pointer  w-[95%] md:w-[350px]  m-auto bg-[#fff8ee] relative">
-            <div
-            style={{
-              animation: 'LRfloatAnimation 3s ease-in-out infinite'
-            }}
-            className="flex absolute animate-[pulse_4s_infinite] top-0 right-0 z-0">
+            <div className="flex absolute  bottom-0 left-0 rotate-180">
               <img
                 src={blueImg}
-                className="h-[40px] w-[42px] mx-1 rotate-90"
+                className="h-[30px] w-[35px]  mx-1 rotate-90"
                 alt="redImg"
               />
-              <img src={redImg} alt="yellow" className="h-[82px] w-[60px]" />
+              <img src={redImg} alt="yellow" className="h-[60px] w-[50px]" />
             </div>
-            <h3 className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] ">
+          </div>
+
+          <div className="min-h-[400px] shadow-lg      cursor-pointer  w-[95%] md:w-[350px]  m-auto bg-[#fff8ee] relative">
+            <div
+              style={
+                {
+                  // animation: 'LRfloatAnimation 3s ease-in-out infinite'
+                }
+              }
+              className="flex absolute   top-0 right-0 z-0"
+            >
+              <img
+                src={blueImg}
+                className="h-[30px] w-[35px] mx-1 rotate-90"
+                alt="redImg"
+              />
+              <img src={redImg} alt="yellow" className="h-[60px] w-[50px]" />
+            </div>
+            <h3
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1200"
+              className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] "
+            >
               Start with Rs. 50,000 budget
             </h3>
-            <p className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+              className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse"
+            >
               We have resources for all types of budgets and audiences.
             </p>
             <img
               src={yellowImg}
-              className="absolute animate-[bounce_2s_ease-in-out_infinite] bottom-0 left-0 w-[82px] h-[65px]"
+              className="absolute   bottom-0 left-0 w-[60px] h-[50px]"
               alt=""
             />
           </div>
 
-          <div className="min-h-[420px]  shadow-lg w-[95%] hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px] hover:animate-pulse animate-ping_1s_infinite cursor-pointer  md:w-[350px]  m-auto bg-[#fff8ee] relative">
-            <div
-            
-            className="flex absolute  bottom-0 right-0 rotate-180"
-            
-            >
+          <div className="min-h-[400px]  shadow-lg w-[95%]     cursor-pointer  md:w-[350px]  m-auto bg-[#fff8ee] relative">
+            <div className="flex absolute  top-0 left-0 ">
+              <img src={redImg} alt="yellow" className="h-[60px]   w-[50px]" />
+
               <img
                 src={blueImg}
-                className="h-[40px] w-[42px]  mx-1 rotate-90"
+                className="h-[30px] w-[35px]  mx-1 "
                 alt="redImg"
               />
-              <img src={redImg} alt="yellow" className="h-[82px] w-[60px]" />
             </div>
-            <h3 className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] ">
+            <h3
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1200"
+              className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] "
+            >
               {" "}
               Influencer Powerhouse
             </h3>
-            <p className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+              className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse"
+            >
               We provide access to a network of over 1 million influencers in
               our database to help you find the perfect influencer.
             </p>
             <img
               src={yellowImg}
-              className="absolute   top-0 left-0 w-[82px] h-[65px] rotate-180"
+              className="absolute   bottom-0 right-0 w-[60px] h-[50px] rotate-180"
               alt=""
-              style={{
-                animation: 'LRfloatAnimation 3s ease-in-out infinite'
-              }}
+              style={
+                {
+                  // animation: 'LRfloatAnimation 3s ease-in-out infinite'
+                }
+              }
             />
           </div>
 
-          <div className="min-h-[420px] w-[95%] shadow-lg hover:scale-95 hover:shadow-lg transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[340px]  hover:animate-pulse animate-ping_1s_infinite cursor-pointer  md:w-[350px]  m-auto bg-[#fff8ee] relative">
-            <div className="flex absolute  bottom-0 left-0 rotate-180">
+          <div className="min-h-[400px] w-[95%] shadow-lg      cursor-pointer  md:w-[350px]  m-auto bg-[#fff8ee] relative">
+            <div className="flex absolute  bottom-0 right-0 rotate-180">
               <img
                 src={blueImg}
-                className="h-[40px] w-[42px] mx-1 rotate-90"
+                className="h-[30px] w-[35px] mx-1 rotate-90"
                 alt="redImg"
               />
-              <img src={redImg} alt="yellow" className="h-[82px] w-[60px]" />
+              <img src={redImg} alt="yellow" className="h-[60px] w-[50px]" />
             </div>
-            <h3 className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] ">
+            <h3
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1200"
+              className="mt-[86px] text-start ml-[20px] mb-[35px] text-[32px] Cormorant font-[600] "
+            >
               24/7 <br /> support{" "}
             </h3>
-            <p className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+              className="text-[20px] leading-[31px] ml-[25px] text-start font_sanse"
+            >
               We offer 24/7 support so that you can always get help with your
               influencer marketing campaign{" "}
             </p>
             <img
               src={yellowImg}
-              className="absolute  top-0 right-0 w-[82px] h-[65px]"
+              className="absolute  top-0 left-0 w-[60px] h-[50px]"
               alt=""
-              style={{
-                animation: 'LRfloatAnimation 3s ease-in-out infinite'
-              }}
+              style={
+                {
+                  // animation: 'LRfloatAnimation 3s ease-in-out infinite'
+                }
+              }
             />
           </div>
         </div>

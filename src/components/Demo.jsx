@@ -9,12 +9,12 @@ const Demo = () => {
   return (
     <div className="mt-[120px] mb-[120px] bg-[#FFEBF5] flex gap-10   shadow-lg md:w-[80%] w-[90%] h-[70vh] m-auto">
       <div className="  flex flex-col justify-around       text-start    border-black-500 w-[80%] h-[70%] m-auto">
-        <p className="font-[cormorant-garamond]  w-[80%] ml-[60px]      text-start font-bold text-4xl leading-10 text-black">
+        <p className="font-[cormorant-garamond]  w-[80%] ml-[60px]      text-start font-semibold text-4xl leading-10 text-black">
           Ready To
           <br />
           Get Started?
         </p>
-        <p className="font-[DM Sans] font-normal  text-start  w-[80%] ml-[60px] text-xl leading-13 text-black">
+        <p className="font-[DM Sans] font-normal  text-[26px]   text-start  w-[80%] ml-[60px] text-xl leading-13 text-black">
           See Your Campaign ROI Before
           <br />
            You Spend a Dime. 
@@ -32,7 +32,7 @@ const Demo = () => {
               className="h-[200px] w-[150px]   absolute cursor-pointer top-6 left-6 z-10 "
             />
           </div>
-          <div className="relative m-0   h-[220px] mr-[60px] hover:scale-95   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px] ">
+          <div className="relative m-0  mt-[-5px] h-[220px] mr-[60px] hover:scale-95   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px] ">
             <img src={Rimg} alt="" className="h-[250px]   cursor-pointer  w-[200px] z-20" />
             <img
               src={Rimg2}
@@ -50,7 +50,7 @@ const Demo = () => {
               className="h-[200px] w-[150px] absolute   cursor-pointer  top-6 left-6 z-10 "
             />
           </div>
-          <div className="relative m-0   h-[220px] mr-[60px] hover:scale-95   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px] ">
+          <div className="relative m-0 mt-[10px]   h-[220px] mr-[60px] hover:scale-95   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:h-[200px] ">
             <img src={Rimg} alt="" className="h-[250px]    animate-ping_1s_infinite cursor-pointer  w-[200px] z-20" />
             <img
               src={Rimg3}

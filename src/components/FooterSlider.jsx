@@ -136,7 +136,7 @@ const FooterSlider = () => {
       <Carousel
         responsive={responsive}
         partialVisible={true}
-        keyBoardControl={true}
+        // keyBoardControl={true}
         autoPlay={true}
         autoPlaySpeed={0}
         infinite={true}
