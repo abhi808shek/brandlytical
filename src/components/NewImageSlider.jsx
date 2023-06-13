@@ -33,15 +33,15 @@ const NewImageSlider = () => {
     },
     {
       image: "bg-slider-img2",
-      title: "  Influencer Marketing",
+      title: "song integration",
       description:
-        "Our influencer marketing services utilise influencers'  social acumen to offer your company a human voice. We pair you up with influencers who have substantial audiences in your target market and who provide interesting content that appeals to their .",
+        "Song Integration-Integrate Your Brand into a Song that Will Capture Hearts",
     },
     {
       image: "bg-slider-img4",
-      title: "Podcast Management",
+      title: "Sponsorship Deals",
       description:
-        "Our team provides comprehensive support and  the entire process to ensure a successful podcast or talk show debut. Benefit from our extensive experience and professional studio setup as we help you bring your podcasting vision to life."
+        "Promote Your Brand in event of your choice with Sponsorship deals"
     },
      
   ];

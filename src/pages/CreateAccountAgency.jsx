@@ -71,11 +71,11 @@ const CreateAccountAgency = () => {
     <div className='flex md:flex-row flex-col w-full h-full'>
 
     <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-        <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
+        {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar/>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${styles.paddingX} ${styles.flexCenter} `}>
           <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>

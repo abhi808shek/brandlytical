@@ -46,14 +46,14 @@ const Hero = () => {
             <br className="sm:block hidden" />
           </p>
           <div className="ml-8  md:ml-2 w-[100vw] flex flex-col items-start">
-          <p className="mt-[27px] flex justify-center md:item-center items-start     marker: font-dm-sans font-normal text-[32px] leading-[190%] text-black ">
+          <p className="mt-[27px] md:text-[32px] sm:text-[20px] flex justify-center md:item-center items-start     marker: font-dm-sans font-normal leading-[190%] text-black ">
             Assess{" "}
             <span className=" px-2 bg-purple-400 bg-opacity-40 rounded-full transform -rotate-x">
               {" "}
               your revenue potential
             </span>
           </p>
-          <p className="  marker: font-dm-sans font-normal text-[32px] leading-[190%] text-black">
+          <p className="  marker: font-dm-sans font-normal md:text-[32px] sm:text-[20px] leading-[190%] text-black">
             {" "}
             before committing funds
           </p>

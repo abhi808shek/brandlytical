@@ -110,7 +110,7 @@ const Footer = () => {
             CONTACT US
           </p>
         </div>
-   <div className=" p-[2%]  flex  justify-center gap-10 item-start md:w-[100%] m-auto w-full ">
+   <div className=" p-[2%]  flex  md:flex-row flex-col justify-center md:gap-10 gap-2 item-start md:w-[100%] m-auto w-full ">
          <div className="  ">
             
           <p className="text-white font-[DM Sans] text-start  font-bold  text-[20px]">  Phone:</p>

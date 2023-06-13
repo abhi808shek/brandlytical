@@ -5,9 +5,11 @@ import FormInput from '../components/FormInput'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useContext, useState } from 'react';
 import { supabase } from '../utils/supaBase'
-import login_img from '../assets/login_img_png.png'
+ 
 import { CartState } from '../context/Context'
-import LoginImg from '../assets/loginImg.PNG'
+// import LoginImg from '../assets/loginImg.PNG'
+import mainLoginImg from '../assets/mainLoginImg.PNG'
+
 const Login = () => {
 
   const { userState, userDispatch } = CartState();
@@ -97,12 +99,12 @@ const Login = () => {
   return (
     <div className='flex md:flex-row flex-col w-full h-full'>
 
-    <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-        <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
+    <div className='bg-[#FFF9F1] overflow-hidden md:w-3/5 w-full'>
+        {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar/>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${styles.paddingX} ${styles.flexCenter} `}>
           <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>
@@ -160,7 +162,7 @@ const Login = () => {
     
 
     <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
-      <img src={LoginImg} className='w-screen h-screen'></img>
+      <img src={mainLoginImg} className='w-screen h-screen'></img>
     </div>
     </div>
   )
