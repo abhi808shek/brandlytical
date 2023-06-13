@@ -7,6 +7,7 @@ import { useContext, useState } from 'react';
 import { supabase } from '../utils/supaBase'
 import login_img from '../assets/login_img_png.png'
 import { CartState } from '../context/Context'
+import mainLoginImg from '../assets/mainLoginImg.PNG'
 
 const ResetPassword = () => {
   const navigate = useNavigate()
@@ -14,14 +15,14 @@ const ResetPassword = () => {
   const [password, setPassword] = useState('')
   
   return (
-    <div className='flex md:flex-row flex-col w-full h-full'>
+    <div className='flex md:flex-row flex-col w-full h-[100vh]'>
 
     <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-        <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
+        {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar/>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${styles.paddingX} ${styles.flexCenter} `}>
           <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>
@@ -62,10 +63,11 @@ const ResetPassword = () => {
     
 
     <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
-      <img src={login_img} className='w-screen h-screen'></img>
+      <img src={mainLoginImg} className='w-screen h-screen'></img>
     </div>
     </div>
   )
-}
+} 
+
 
 export default ResetPassword

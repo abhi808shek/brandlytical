@@ -8,7 +8,7 @@ import { checkValuesAgainstBoundaries } from 'react-range';
 import login_img from '../assets/login_img_png.png'
 import InputField from '../components/InputField';
 import { CartState } from '../context/Context'
-
+import LoginImg from '../assets/loginImg.PNG'
 const EvalOrCompleteProfile = () => {
   const { userState, userDispatch } = CartState();
   const navigate = useNavigate();
@@ -117,14 +117,14 @@ const EvalOrCompleteProfile = () => {
     
     {profile && (<div>
       {profile[0].verified && 
-        <div className='flex md:flex-row flex-col w-full h-full'>
+        <div className='flex md:flex-row flex-col w-full h-[100vh]'>
 
         <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-            <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
+            {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
               <div className={`${styles.boxWidth}`}>
                 <Navbar/>
               </div>
-            </div>
+            </div> */}
 
             <div className={`${styles.paddingX} ${styles.flexCenter} `}>
               <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>
@@ -183,7 +183,7 @@ const EvalOrCompleteProfile = () => {
 
 
         <div className='flex h-[300px] md:w-2/5 w-full fixed right-0'>
-          <img src={login_img} className='w-screen h-screen'></img>
+          <img src={LoginImg} className='w-screen h-screen'></img>
         </div>
         </div>
       
@@ -196,14 +196,10 @@ const EvalOrCompleteProfile = () => {
         {
           profile[0].declined && (
             <>
-            <div className='flex md:flex-row flex-col w-full h-full'>
+            <div className='flex md:flex-row flex-col w-full h-[100vh]'>
 
         <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-        <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
-          <div className={`${styles.boxWidth}`}>
-            <Navbar/>
-          </div>
-        </div>
+        
 
         <div className={`${styles.paddingX} ${styles.flexCenter} `}>
           <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>
@@ -219,7 +215,7 @@ const EvalOrCompleteProfile = () => {
         
 
         <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
-            <img src={login_img} className='w-screen h-screen'></img>
+            <img src={LoginImg} className='w-screen h-screen'></img>
             </div>
         </div>
             </>
@@ -230,18 +226,18 @@ const EvalOrCompleteProfile = () => {
         {
           !profile[0].declined && (
             <>
-            <div className='flex md:flex-row flex-col w-full h-full'>
+            <div className='flex md:flex-row   flex-col w-full h-[100vh]'>
 
-            <div className='bg-white overflow-hidden md:w-3/5 w-full'>
-            <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
+            <div className='bg-white h-full overflow-hidden md:w-3/5 w-full'>
+            {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
               <div className={`${styles.boxWidth}`}>
                 <Navbar/>
               </div>
-            </div>
+            </div> */}
 
             <div className={`${styles.paddingX} ${styles.flexCenter} `}>
               <div className={` flex justify-center md:mt-[100px] mt-[50px] flex-col items-center`}>
-                <h1 className='text-black font-bold md:text-[40px] text-[25px] font-poppins'>WE ARE EVALUATING YOUR PROFILE </h1>
+                <h1 className='text-black font-bold md:text-[40px] text-[25px] font-poppins'> YOUR PROFILE </h1>
                 <p className='font-poppins font-semibold text-[16px] text-opacity-40 text-black'>In order to make sure our brand holds up a standard, Our system does not allow access to any profiles</p>
                 <div className='text-white font-[500] text-[16px] p-2 md:px-20 px-10 bg-[#D10269]  mt-10 text-center rounded-md'>
                     Pending 
@@ -253,7 +249,7 @@ const EvalOrCompleteProfile = () => {
 
 
             <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
-            <img src={login_img} className='w-screen h-screen'></img>
+            <img src={LoginImg} className='w-screen h-screen'></img>
             </div>
             </div>
             </>

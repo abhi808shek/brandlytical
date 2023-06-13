@@ -59,7 +59,7 @@ const CreateAccountTeam = () => {
 
 
   return (
-    <div className='flex md:flex-row flex-col w-full h-full'>
+    <div className='flex md:flex-row flex-col w-full h-[100vh]'>
 
     <div className='bg-white overflow-hidden md:w-3/5 w-full'>
         {/* <div className={`${styles.paddingX} ${styles.flexCenter} bg-black`}>
