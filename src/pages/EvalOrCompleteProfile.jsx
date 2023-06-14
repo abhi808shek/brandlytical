@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 import { checkValuesAgainstBoundaries } from 'react-range';
  import InputField from '../components/InputField';
 import { CartState } from '../context/Context'
-import LoginImg from '../assets/loginImg.PNG'
+import LoginImg from '../assets/LoginImg.png'
 const EvalOrCompleteProfile = () => {
   const { userState, userDispatch } = CartState();
   const navigate = useNavigate();
@@ -213,7 +213,7 @@ const EvalOrCompleteProfile = () => {
 
         
 
-        <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
+        <div className='flex h-[100vh] bg-white md:w-2/5 w-full fixed right-0 md:visible invisible'>
             <img src={LoginImg} className='w-screen h-screen'></img>
             </div>
         </div>

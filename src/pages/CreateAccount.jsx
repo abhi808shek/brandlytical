@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { supabase } from '../utils/supaBase'
 import login_img from '../assets/login_img_png.png'
 import InputField from '../components/InputField'
-import LoginImg from '../assets/loginImg.PNG'
+import LoginImg from '../assets/LoginImg.png'
 const CreateAccount = ({ signupas }) => {
 
  const[name, setName] = useState('')
@@ -178,7 +178,7 @@ const [loading, setLoading] = useState(false)
     </div>
     
 
-    <div className='flex h-[300px] md:w-2/5 w-full fixed right-0 md:visible invisible'>
+    <div className='flex h-[100vh] bg-[white] md:w-2/5 w-full fixed right-0 md:visible invisible'>
       <img src={LoginImg} className='w-screen h-screen'></img>
     </div>
     </div>

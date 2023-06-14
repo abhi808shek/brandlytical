@@ -6,15 +6,22 @@ import yellowImg from "../assets/Rectangle311.png";
 import blueImg from "../assets/Rectangle312.svg";
 import yellowImg2 from "../assets/yellow2img.png";
 import blueImg2 from "../assets/blue2img.png";
-import { Link ,useLocation,useNavigate} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Fshweta from "../assets/Fshweta.png";
 import Fimg21 from "../assets/Fimg21.png";
 import Franveer from "../assets/Franveer.png";
 import styles from "../styles";
 
 const Footer = () => {
+
+const phoneNumber = '8800880730'; // Replace with the desired WhatsApp number
+
+// Prefix the phone number with the country code, e.g., '91' for India
+const countryCode = '91';
+const whatsappLink = `https://wa.me/${countryCode}${phoneNumber}`;
+
   const location = useLocation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <section
       id="footer"
@@ -34,9 +41,18 @@ const Footer = () => {
                 <img src={insa} className="w-[100%]   h-[100]%" />
               </Link>
             </div>
+            <div className="p-4  m-[10px]   cursor-pointer   border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
+              {" "}
+              <Link to="https://www.instagram.com/brandlytical_studio/?hl=en">
+                <img src={insa} className="w-[100%]   h-[100]%" />
+                {/* <p className="text-center font-bold mr-[10px] mt-[3px]">Studio</p> */}
+              </Link>
+            </div>
             <div className="p-4  m-[10px]    cursor-pointer   border-2 border-[#7A1848]  border-dotted  rounded-full w-[70px] h-[70px] bg-white">
               {" "}
+              <Link to={whatsappLink}>
               <img src={fw} className="w-[100%]    cursor-pointer h-[100]%" />
+              </Link>
             </div>
             <div className="p-4  m-[10px]      cursor-pointer border-2 border-[#7A1848]  border-dotted rounded-full w-[70px] h-[70px] bg-white">
               {" "}
@@ -95,14 +111,13 @@ const Footer = () => {
       ></div>
       <div className="flex flex-col w-full mb-10 md:h-[100%] h-[50%] m-auto justify-center md:justify-between   ">
         <div className="flex item-end w-auto sm:flex-row sm:w-[100%]    flex-col lg:pl-[400px] md:pl-[200px]">
- <a href="#about">
- <p className="px-3 cursor-pointer hover:text-red-500 hover:underline font-bold lg:text-[16px] sm:text-[14px] text-[18p] md:py-0 py-2 text-white">
+          <a href="#about">
+            <p className="px-3 cursor-pointer hover:text-red-500 hover:underline font-bold lg:text-[16px] sm:text-[14px] text-[18p] md:py-0 py-2 text-white">
               ABOUT US
-           </p>
- </a>
-             
-         
-          < a href="#services">
+            </p>
+          </a>
+
+          <a href="#services">
             <p className="px-3 cursor-pointer hover:text-red-500 hover:underline font-bold lg:text-[16px] sm:text-[14px] text-[16p] md:py-0 py-2 text-white">
               OUR SERVICES
             </p>

@@ -20,6 +20,11 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const phoneNumber = '8800880730'; // Replace with the desired WhatsApp number
+
+// Prefix the phone number with the country code, e.g., '91' for India
+const countryCode = '91';
+const whatsappLink = `https://wa.me/${countryCode}${phoneNumber}`;
   return (
     <section
       id="home"
@@ -56,11 +61,12 @@ const About = () => {
               className=" animate-[bounce_5s_ease-in-out_infinite] md:absolute md:right-[55px] md:bottom-[220px] w-[70px] h-[70px]"
             />
           </Link>
-
+          <Link to={whatsappLink}>
           <img
             src={wp}
             className="  animate-[bounce_3s_ease-in-out_infinite] md:absolute md:right-[110px] md:bottom-[220px] w-[35px] h-[35px]"
           />
+          </Link>
           <img
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"

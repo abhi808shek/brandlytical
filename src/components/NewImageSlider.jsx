@@ -34,7 +34,7 @@ const NewImageSlider = () => {
     },
     {
       image: "bg-slider-img2",
-      title: "Song integration",
+      title: "Song Integration",
       description:
         "Song Integration-Integrate Your Brand into a Song that Will Capture Hearts",
     },

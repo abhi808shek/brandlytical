@@ -9,6 +9,12 @@ import blueImg from '../assets/Rectangle312.svg'
 import redImg from '../assets/Rectangle313.svg'
 import { Link } from 'react-router-dom'
 const Pramotion = () => {
+
+    const phoneNumber = '8800880730'; // Replace with the desired WhatsApp number
+
+// Prefix the phone number with the country code, e.g., '91' for India
+const countryCode = '91';
+const whatsappLink = `https://wa.me/${countryCode}${phoneNumber}`;
   return (
     <div id='pramotion' className=' hover:scale-95 mb-[140px]   transition duration-300 cubic-bezier(0.165, 0.84, 0.44, 1) hover:w-[79%] relative w-[80%] m-auto  '> 
     <div  className='promotionTextDiv '>
@@ -45,9 +51,10 @@ const Pramotion = () => {
         <p className='font-[Cormorant Garamond]'>Performance Analysis</p>
     </div>
 </div>
- 
+<Link to="https://www.instagram.com/brandlytical/">
 <img src={wp} className=' absolute cursor-pointer  z-0  animate-[bounce_7s_ease-in-out_infinite] right-0 top-0 mr-[30px] mt-[50px]   w-[50px] h-[50px]' />
-        <Link to='https://www.linkedin.com/in/brandlytical-media-ab94811a7/'>
+       </Link>
+        <Link to={whatsappLink}>
         <img src={sLink} className='absolute z-0 bg-opacity-40  cursor-pointer animate-[bounce_5s_ease-in-out_infinite] mr-[10px] mt-[60px]  right-0 top-0   w-[40px] h-[40px]' />
 
         </Link>
