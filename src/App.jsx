@@ -114,17 +114,6 @@ const App = () => {
           path="/thankyou"
           element={!session ? <Login /> : <ThankyouPage />}
         />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/dashboard"
-          element={
-            !session ? (
-              <Login />
-            ) : (
-              <UserDashboard
-                signOut={handleSignOut}
                 handleCampaign={handleMyCampaigns}
               />
             )
